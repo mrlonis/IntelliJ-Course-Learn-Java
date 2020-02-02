@@ -14,4 +14,9 @@
 .DS_Store
 
 # Build Files
-/lesson1/task1/build/**
+
+lesson1/task1/build/reports/tests/test/classes/Tests.html
+lesson1/task1/build/reports/tests/test/index.html
+lesson1/task1/build/reports/tests/test/packages/default-package.html
+lesson1/task1/build/test-results/test/binary/results.bin
+lesson1/task1/build/test-results/test/TEST-Tests.xml
