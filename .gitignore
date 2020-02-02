@@ -7,5 +7,11 @@
 # Java
 *.class
 
+# PDF
+*.pdf
+
 # Mac System Files
 .DS_Store
+
+# Build Files
+/lesson1/task1/build/**
