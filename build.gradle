@@ -1,17 +1,6 @@
-buildscript {
-    repositories {
-        mavenCentral()
-        maven {
-            url "https://plugins.gradle.org/m2/"
-        }
-    }
-    dependencies {
-        classpath "io.freefair.gradle:lombok-plugin:4.1.6"
-        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.8"
-    }
+plugins {
+    id "org.sonarqube" version "2.8"
 }
-
-apply plugin: "org.sonarqube"
 
 sonarqube {
     properties {
@@ -19,57 +8,11 @@ sonarqube {
     }
 }
 
-def printOutput(def output) {
-    return tasks.create("printOutput") {
-        for (line in output.toString().readLines()) {
-            println "#educational_plugin" + line
-        }
-    }
-}
-
-subprojects {
-    apply plugin: 'application'
-    apply plugin: 'java'
-    apply plugin: 'idea'
-    apply plugin: "io.freefair.lombok"
-
-    sourceCompatibility = 1.8
-
+allprojects {
     repositories {
         mavenCentral()
-    }
-
-    dependencies {
-        testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
-        testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.6.0")
-    }
-
-    sourceSets {
-        main {
-            java.srcDir 'src'
-        }
-        test {
-            java.srcDir 'test'
+        maven {
+            url "https://plugins.gradle.org/m2/"
         }
     }
-
-    mainClassName = project.hasProperty("mainClass") ? project.getProperty("mainClass") : ""
-
-    def runOutput = new ByteArrayOutputStream()
-    tasks.run.setStandardOutput(runOutput)
-    tasks.run.doLast { printOutput(runOutput) }
-}
-
-project(':util') {
-    dependencies {
-        testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
-        testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.6.0")
-    }
-}
-
-configure(subprojects.findAll {it.name != 'util'}) {
-  dependencies {
-    compile project(':util').sourceSets.main.output
-    testCompile project(':util').sourceSets.test.output
-  }
 }

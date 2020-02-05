@@ -1,0 +1,36 @@
+plugins {
+    id 'application'
+    id 'java'
+    id 'idea'
+}
+
+sourceCompatibility = 1.8
+
+dependencies {
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.6.0"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.6.0"
+}
+
+sourceSets {
+    main {
+        java.srcDir 'src'
+    }
+
+    test {
+        java.srcDir 'test'
+    }
+}
+
+def printOutput(def output) {
+    return tasks.create("printOutput") {
+        for (line in output.toString().readLines()) {
+            println "#educational_plugin" + line
+        }
+    }
+}
+
+mainClassName = project.hasProperty("mainClass") ? project.getProperty("mainClass") : ""
+
+def runOutput = new ByteArrayOutputStream()
+tasks.run.setStandardOutput(runOutput)
+tasks.run.doLast { printOutput(runOutput) }

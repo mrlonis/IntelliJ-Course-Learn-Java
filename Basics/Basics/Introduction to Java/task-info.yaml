@@ -16,3 +16,5 @@ files:
     placeholder_text: division
 - name: test/com/mrlonis/basics/Tests.java
   visible: false
+- name: build.gradle
+  visible: true
