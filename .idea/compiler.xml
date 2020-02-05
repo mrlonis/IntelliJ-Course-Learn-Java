@@ -12,6 +12,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Basics-Basics-Introduction_to_Java_main" target="1.8" />
+      <module name="Basics-Basics-Introduction_to_Java_test" target="1.8" />
       <module name="IntelliJ-Course-Learn-Java_main" target="1.8" />
       <module name="IntelliJ-Course-Learn-Java_test" target="1.8" />
       <module name="lesson1-task1_main" target="1.8" />

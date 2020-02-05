@@ -1,8 +1,8 @@
 type: edu
 files:
-- name: src/com/mrlonis/lesson1
+- name: src/Task.java
   visible: true
-- name: test/com/mrlonis/tests/lesson1
+- name: test/Tests.java
   visible: false
 - name: lombok.config
   visible: false

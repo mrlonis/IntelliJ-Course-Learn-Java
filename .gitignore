@@ -1,19 +1,14 @@
 /.gradle
 /build
+**/build
 
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar
-
-# Java
-*.class
 
 # PDF
 *.pdf
 
 # Mac System Files
 .DS_Store
-
-# Build Files
-
-lesson1/task1/build
-util/build
+*.zip
+.coursecreator/Learn_Java/course.json

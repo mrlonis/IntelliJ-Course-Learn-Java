@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Basics/Basics/Introduction to Java/Basics-Basics-Introduction_to_Java.iml" filepath="$PROJECT_DIR$/.idea/modules/Basics/Basics/Introduction to Java/Basics-Basics-Introduction_to_Java.iml" group="IntelliJ-Course-Learn-Java/Basics-Basics-Introduction_to_Java" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Basics/Basics/Introduction to Java/Basics-Basics-Introduction_to_Java_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Basics/Basics/Introduction to Java/Basics-Basics-Introduction_to_Java_main.iml" group="IntelliJ-Course-Learn-Java/Basics-Basics-Introduction_to_Java" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Basics/Basics/Introduction to Java/Basics-Basics-Introduction_to_Java_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Basics/Basics/Introduction to Java/Basics-Basics-Introduction_to_Java_test.iml" group="IntelliJ-Course-Learn-Java/Basics-Basics-Introduction_to_Java" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/IntelliJ-Course-Learn-Java.iml" filepath="$PROJECT_DIR$/.idea/modules/IntelliJ-Course-Learn-Java.iml" group="IntelliJ-Course-Learn-Java" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lesson1/task1/lesson1-task1.iml" filepath="$PROJECT_DIR$/.idea/modules/lesson1/task1/lesson1-task1.iml" group="IntelliJ-Course-Learn-Java/lesson1-task1" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lesson1/task1/lesson1-task1_main.iml" filepath="$PROJECT_DIR$/.idea/modules/lesson1/task1/lesson1-task1_main.iml" group="IntelliJ-Course-Learn-Java/lesson1-task1" />
