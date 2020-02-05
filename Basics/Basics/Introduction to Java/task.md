@@ -1,20 +1,35 @@
-This is a task description file. Its content will be displayed to a learner in the **Task Description** window.
+# Introduction to Java
+ 
+## Classes
 
-It supports both Markdown and HTML.
-To toggle the format, you can rename **task.md** to **task.html**, or vice versa.
-The default task description format can be changed in **Preferences | Tools | Education**, but this will not affect any existing task description files.
+A Java class is used to hold data, perform functions (called methods in Java), or both.
 
-The following features are available in **task.md/task.html** which are specific to the EduTools plugin:
+A class, named *Calculator*, is declared in a file called *Calculator.java* below:
 
-- Hints can be added anywhere in the task text. Type "hint" and press Tab. <div class="hint">Text of your hint</div>
+```java
+public class Calculator {
 
-- You can insert shortcuts in the task description.
-While **task.html/task.md** is open, right-click anywhere on the **Editor** tab and choose the **Insert shortcut** option from the context menu.
-For example: &shortcut:FileStructurePopup;.
+}
+```
 
-- Insert the &percnt;`IDE_NAME`&percnt; macro, which will be replaced by the actual IDE name.
-For example, **%IDE_NAME%**.
+### Public, private, static
 
-- Insert PSI elements, by using links like `<a href="psi_element://link.to.element">element description</a>`.
-To get such a link, right-click the class or method and select **Copy Reference**. Then press &shortcut:EditorPaste; to insert the link where appropriate.
-For example, a <a href="psi_element://java.lang.String#contains">link to the "contains" method</a>.
+Notice the class above is declared as ```public```. This means, anyone using a package containing this class can see the class and use it. A ```private``` class would not be visible or usable and a ```static``` class is a class that can only exist once in a package. Non-static classes can be create multiple times simultaneously.
+
+## Methods
+
+A method in Java can do whatever you program it to do. The method below simply adds two parameters, *x* & *y*, and adds them together. The class is conveniently named calculator, so it makes sense a calculator would have an add function.
+
+```java
+public class Calculator {
+  public int add(int x, int y) {
+    return x + y;
+  }
+}
+```
+
+### Data Types
+
+## Task
+
+Modify the calculator to be able to subtract, divide, and multiply.

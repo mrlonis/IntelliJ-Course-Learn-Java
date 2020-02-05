@@ -1,8 +1,18 @@
 type: edu
 files:
-- name: src/Task.java
-  visible: true
-- name: test/Tests.java
-  visible: false
 - name: lombok.config
+  visible: false
+- name: src/com/mrlonis/basics/Calculator.java
+  visible: true
+  placeholders:
+  - offset: 160
+    length: 5
+    placeholder_text: subtraction
+  - offset: 221
+    length: 5
+    placeholder_text: multiplication
+  - offset: 280
+    length: 5
+    placeholder_text: division
+- name: test/com/mrlonis/basics/Tests.java
   visible: false
